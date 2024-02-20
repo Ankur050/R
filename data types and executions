@@ -1,0 +1,138 @@
+
+
+a<-10
+class(a)
+b<-as.logical(a)
+class(b)
+print(b)
+d<-as.character(a)
+class(d)
+e<-as.integer(a)
+class(e)
+f<-as.complex(a)
+class(f)
+print(f)
+
+g<-20L
+h<-as.numeric(g)
+print(h)
+class(h)
+
+i<-as.complex(g)
+class(i)
+j<-as.charcater(g)
+class(j)
+k<-as.raw(g)
+class(k)
+l<-as.logical(g)
+class(l)
+
+
+  --------------------  output ----------
+
+   a<-10
+> class(a)
+[1] "numeric"
+> b<-as.logical(a)
+> class(b)
+[1] "logical"
+> print(b)
+[1] TRUE
+> d<-as.character(a)
+> class(d)
+[1] "character"
+> e<-as.integer(a)
+> class(e)
+[1] "integer"
+> f<-as.complex(a)
+> class(f)
+[1] "complex"
+> print(f)
+[1] 10+0i
+
+  g<-20L
+> h<-as.numeric(g)
+> print(h)
+[1] 20
+> class(h)
+[1] "numeric"
+> 
+> i<-as.complex(g)
+> class(i)
+[1] "complex"
+> j<-as.charcater(g)
+
+
+  ---------------------------  various operations --------------------
+
+
+  a<-10
+b<-20
+print(a+b)
+a-b
+a^b
+-(a-b)
+a*b
+a**b
+a^b
+a/b
+a%%b
+25%%3 # modulus
+25%/%3 # it will not return after the decimal values 
+d<-c(10,20,30)
+e<-c(2,5,3)    # c is mandatory for multiple values 
+f<-c(10,0,0 )
+
+d+e
+e-d
+d-e
+d*e
+D**e
+d*e
+h<-10
+j<-20
+print(h*j)
+
+  ------------------------  outputs
+
+
+
+  
+> a<-10
+> b<-20
+> print(a+b)
+[1] 30
+> a-b
+[1] -10
+> a^b
+[1] 1e+20
+> -(a-b)
+[1] 10
+> a*b
+[1] 200
+> a**b
+[1] 1e+20
+> a^b
+[1] 1e+20
+> a/b
+[1] 0.5
+> a%%b
+[1] 10
+> 25%%3 # modulus
+[1] 1
+> 25%/%3 # it will not return after the decimal values 
+[1] 8
+> d<-c(10,20,30)
+> e<-c(2,5,3)    # c is mandatory for multiple values 
+> f<-c(10,0,0 )
+> 
+> d+e
+[1] 12 25 33
+> e-d
+[1]  -8 -15 -27
+> d-e
+[1]  8 15 27
+> d*e
+[1]  20 100  90
+> D**e
+  
